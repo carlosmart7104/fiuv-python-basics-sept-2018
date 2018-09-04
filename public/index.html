@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Python: Introducción a la programación</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai-sublime.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-transition="fade" data-background-image="img/mm-logo.png" style="color: #222;">
+					<div style="font-size: 20px; text-transform: uppercase;">Introducción a la</div>
+					<div style="font-size: 30px; text-transform: uppercase;">programación</div>
+					<div style="font-size: 14px; text-transform: uppercase;">con</div>
+					<div style="font-size: 150px; font-weight: bold; text-transform: uppercase; margin: -30px;">Python</div>
+					<div style="font-size: 14px; text-transform: uppercase;">por</div>
+					<div style="font-size: 30px; text-transform: uppercase;">Carlos Martínez</div>
+					<div style="font-size: 14px; text-transform: uppercase;">Fundador de</div>
+					<div style="font-size: 40px; font-weight: bold;">Mundo Mecatrónico</div>
+					<div style="font-size: 20px; font-weight: normal;">(Comunidad STEM+)</div>
+					<aside class="notes">
+						Presentar el curso
+					</aside>
+				</section>
+				<section>
+					<section>
+						<h2>Temas del curso</h2>
+					</section>
+					<section>
+						Hablémos de software
+						<aside class="notes">
+							En esta sección les hablaré sobre el panorama general de la industria del software, tecnologías, tendencias, consejos laborales y algunos casos de estudio que he tenido la oportunidad de conocer.
+						</aside>
+					</section>
+					<section>
+						Introducción a la programación
+						<aside class="notes">
+							Aquí hablaremos de la programación desde un punto de vista técnico e historico, hablarémos de python como lenguaje de programación y sus características.
+						</aside>
+					</section>
+					<section>
+						Conociendo la terminal de comandos
+						<aside class="notes">
+							Les mostraré como usar la terminal de comandos de windows para las tareas básicas que necesitaremos realizar durante el desarrollo, como crear directorios y desplazarse entre ellos y ejecutar python en modo interactivo o mediante archivos fuente.
+						</aside>
+					</section>
+					<section>
+						Entrada y salida de datos
+						<aside class="notes">
+							Les mostraré PRINT e INPUT, dos funciones de ENTRADA/SALIDA de python que usaremos a lo largo del curso.
+						</aside>
+					</section>
+					<section>
+						Variables para almacenar datos y algo más
+						<aside class="notes">
+							También hablaremos de las variables. tipos de datos y sus conversiones.
+						</aside>
+					</section>
+					<section>
+						Toda clase de operadores
+						<aside class="notes">
+							Aprenderán el uso de diferentes clases de operadores: aritméticos, lógicos, de nivel bit y algunos ejemplos al respecto.
+						</aside>
+					</section>
+					<section>
+						Controlando el flujo del programa
+						<aside class="notes">
+							En este punto comenzaremos a dirigir la toma de desiciones de nuestro programa por medio de condicionales.
+						</aside>
+					</section>
+					<section>
+						Listas de datos y como usarlas
+						<aside class="notes">
+							Entonces descubriremos las listas de datos y los ciclos.
+						</aside>
+					</section>
+					<section>
+						Funciones para todo
+						<aside class="notes">
+							Después, a definir funciones y cómo usarlas para ahorrar código.
+						</aside>
+					</section>
+					<section>
+						Estructuras, más allá de las listas
+						<aside class="notes">
+							También estudiaremos algunos tipos de datos complejos, como los diccionarios y las tuplas, e incluso sus combinaciones con listas y variables simples.
+						</aside>
+					</section>
+					<section>
+						Módulos propios y ajenos
+						<aside class="notes">
+							Y finalmente aprenderán como divivir el código y prepararlo para que pueda ser reutilizado en múltiples proyectos.
+						</aside>
+					</section>
+					<section>
+						<h4>Bonus!!!</h4>
+						<video class="stretch" data-autoplay loop src="video/bonus.mp4"></video>
+						<aside class="notes">
+							Si terminamos con tiempo de sobra continuarémos con temas un poco más complejos y desarrollaremos un proyecto final.
+						</aside>
+					</section>
+				</section>
+				<section>
+					<aside class="notes">
+						Ok, ¿preguntas?, ¿aclaraciones?
+						Muy bien, entonces...
+					</aside>
+				</section>
+				<section>
+					<h2>Hablémos de software</h2>
+					<aside class="notes">
+						Y la pregunta obligada es...
+					</aside>
+				</section>
+				<section>
+					<h3>¿Qué es el software?</h3>
+				</section>
+				<section>
+					<blockquote cite="https://standards.ieee.org/standard/729-1983.html">
+						&ldquo;Es el conjunto de los programas de cómputo, procedimientos, reglas, documentación y datos asociados, que forman parte de las operaciones de un sistema de computación.&rdquo;
+					</blockquote>
+					<p class="fragment fade-in">¿y quien dice?</p>
+					<p class="fragment fade-up">El estándar 729 del IEEE, publicado en 1983.</p><aside class="notes">
+						Así es, la IEEE también hace esto.
+					</aside>
+				</section>
+				<section>
+					<h3>¿Cómo se clasifica el software?</h3>
+				</section>
+				<section>
+					<h2>Software de sistema</h2>
+					<section>Sistemas operativos</section>
+					<section>Controladores de dispositivos</section>
+					<section>Herramientas de diagnóstico</section>
+					<section>Herramientas de corrección y optimización</section>
+					<section>Servidores</section>
+					<section>Utilidades</section>
+				</section>
+				<section>
+					<h2>Software de programación</h2>
+					<section>Editores de texto (código)</section>
+					<section>Compiladores</section>
+					<section>Intérpretes</section>
+					<section>Enlazadores</section>
+					<section>Depuradores</section>
+					<section>Entornos de desarrollo integrados (IDE)</section>
+				</section>
+				<section>
+					<h2>Software de aplicación</h2>
+					<section>Aplicaciones para control de sistemas y automatización industrial</section>
+					<section>Aplicaciones ofimáticas</section>
+					<section>Software educativo</section>
+					<section>Software empresarial</section>
+					<section>Bases de datos</section>
+					<section>Telecomunicaciones</section>
+					<section>Videojuegos</section>
+					<section>Software médico</section>
+					<section>Software de cálculo numérico y simbólico</section>
+					<section>Software de diseño asistido (CAD)</section>
+					<section>Software de control numérico (CAM)</section>
+				</section>
+				<section>
+					<h3>¿Qué es un lenguaje de programación?</h3>
+				</section>
+				<section>
+					<p>Un lenguaje de programación es un lenguaje formal que especifica una serie de instrucciones para que una computadora produzca diversas clases de datos. Los lenguajes de programación pueden usarse para crear programas que pongan en práctica algoritmos específicos que controlen el comportamiento físico y lógico de una computadora.</p>
+				</section>
+				<section>
+					<h3>¿Cuantos lenguajes de programación existen?</h3>
+				</section>
+				<section>
+					Solamente en Wikipedia se encuentran registrados más de 
+					<b style="font-size: 50px;">650</b> lenguajes de programación.</br>Sin embargo dado que crear lenguajes de programación es parte de algunos planes de estudio, es prácticamente imposible saberlo.
+				</section>
+				<section>
+					<p>Y entre tantos lenguajes de programación,</p>
+					<h3>¿Porqué python?</h3>
+					<p class="fragment fade-in">Preguntale a IEEE...</p>
+				</section>
+				<section data-background-iframe="https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2018">
+				</section>
+				<section>
+					<h2>¿Y el entorno laboral?</h2>
+				</section>
+				<section>
+					<aside class="notes">
+						¿Alguna duda?
+						¿Ya se aburrieron?
+					</aside>
+				</section>
+				<section>
+					<h3>Hablémos del software en México y algunos casos de estudio</h3>
+				</section>
+				<section>
+					<p>Varias fuentes afirman que para el año 2019, tan solo en México habrá un <b>déficit</b> de <b>148 mil</b> profesionales TIC.</br>Lo que se traduce en aproximadamente el 40% de los puestos vacantes...</p>
+					<p class="fragment fade-in">Tu puesto ya está ahí, esperandote.</p>
+					<aside class="notes">
+						Y entonces viene la pregunta...
+					</aside>
+				</section>
+				<section>
+					<h3>¿Qué se necesita para ser desarrollador de software profesional?</h3>
+					<section>...</section>
+					<section>Ganas</section>
+					<section>Mindset</section>
+					<section>Y preparación</section>
+					<aside class="notes">
+						Y entonces viene un clásico...
+					</aside>
+				</section>
+				<section>
+					<h2>Título</h2>
+					<p>vs</p>
+					<h2>Portafolio</h2>
+				</section>
+				<section>
+					<h2>Certificaciones</h2>
+					<p>+</p>
+					<h2>Diplomados</h2>
+				</section>
+				<section>
+					<p>Y experiencia...</p>
+				</section>
+				<section>
+					<h3>Pero, ¿cómo conseguir experiencia laboral a los veintitantos?</h3>
+				</section>
+				<section>
+					<h3>Hay opciones para todos</h3>
+					<section>Job Shadowing: Siguiendo al sensei</section>
+					<section>Maratones (hackatones): One Shot and Start Up</section>
+					<section>Embajador: Representa tus ideas, negocia y vende</section>
+					<section>Voluntariado: Salva el planeta</section>
+					<section>Emprende y ayuda a emprender:</br>Sé parte de algo grande, desde su inicio</section>
+				</section>
+				<section>
+					<h3>Mega TIP's</h3>
+					<section>Tómatelo en serio</section>
+					<section>Abórdalo estratégicamente</section>
+					<section>Pon atención al detalle</section>
+					<section>Fortalece tus habilidades blandas</section>
+					<section>Aprende de éxitos y fracasos, tanto propios como ajenos</section>
+				</section>
+				<section>
+					Todo es importante, pero todo depende
+					<section>Logros antes que teoría</section>
+					<section>Teoría antes que práctica</section>
+					<section>Práctica antes que logros</section>
+				</section>
+				<section>
+					<h2>Casos de estudio</h2>
+					<aside class="notes">
+						Todo lo que puedes hacer con software en méxico.
+					</aside>
+				</section>
+				<section>
+					<p>Revolucionando las Empresas Tradicionales</p>
+					<section>Logiety Technology: Inteligencia Artificial Aduanal</section>
+					<section>Stackcode: Software a la medida</section>
+				</section>
+				<section>
+					<p>Hightech</p>
+					<section>DYI Drones: La primer potencia dron, fue mexicana</section>
+					<section>Electronic Cats: Pico satélites y hardware fancy para todos</section>
+				</section>
+				<section>
+					<p>Gaming</p>
+					<section>Lienzo Estudios: Mulaka, el videojuego mexicano sobre la cultura Tarahumara</section>
+					<section>Mecha Estudios: Neon City Riders, Aventura Cyberpunk + PixelArt #MadeInXalapa</section>
+				</section>
+				<section>
+					<p>Fintech</p>
+					<section>Clip: La terminal de pagos en tu smartphone</section>
+					<section>Prestadero: Crowdfunding México</section>
+				</section>
+				<section>
+					<p>Internet of Things</p>
+					<section>Tecnologías Hexágono: Smart Cities son mejores ciudades</section>
+					<section>Rutapp: Transporte Inteligente</section>
+				</section>
+				<section>
+					<p>Empresas disruptivas con software en el núcleo</p>
+					<section>Ben & Frank: Lentes para cuatrojos</section>
+					<section>ChaCha Express: Señoras de limpieza a una app de distancia</section>
+				</section>
+				<section>
+					<p>Hacking Cívico</p>
+					<section>Codeando México / Codeando Xalapa</section>
+					<section>Mundo Mecatrónico</section>
+				</section>
+				<section>
+					<p>Educación</p>
+					<section>Briko</section>
+					<section>Código Facilito</section>
+				</section>
+				<section>
+					<h2>Cultura Dev</h2>
+				</section>
+				<section>
+					<p>Comunidades</p>
+					<section>Estudiantes Verdes</section>
+					<section>IEEE</section>
+					<section>ComunidadTX</section>
+					<section>Codeando México</section>
+					<section>Mundo Mecatrónico</section>
+				</section>
+				<section>
+					<p>Eventos</p>
+					<section>Talent Nights</section>
+					<section>Arduino Day</section>
+					<section>Byte Day</section>
+					<section>Star Wars Day</section>
+					<section>Campus Party</section>
+					<section>Talent Land</section>
+					<section>Hackathones</section>
+					<section>Meetups Veracruz</section>
+				</section>
+				<section>
+					<p>Hacker Space's</p>
+					<section>HackerGarage</section>
+					<section>La Nave MakerSpace</section>
+					<section>Hacedores</section>
+					<section>The Inventors House</section>
+				</section>
+				<section>
+					<p>Sitios inevitables para developers</p>
+					<section>Software Guru: sg.com.mx</section>
+					<section>Mozilla: developer.mozilla.org/es</section>
+					<section>StackOverflow: stackoverflow.com</section>
+					<section>Facebook para desarrolladores: developers.facebook.com</section>
+					<section>Google Developers: developers.google.com</section>
+					<section>Platzi: platzi.com</section>
+					<section>Udemy: www.udemy.com</section>
+					<section>Código Facilito: codigofacilito.com</section>
+					<section>Free Software Foundation: www.fsf.org/es</section>
+					<section>Apache Foundation: www.apache.org</section>
+					<section>GitHub: github.com</section>
+					<section>TechCrunch: techcrunch.com</section>
+					<section>YCombinator: www.ycombinator.com</section>
+					<section>Hacker News: news.ycombinator.com</section>
+					<section>MIT Technology Review: www.technologyreview.com</section>
+					<section>TED Talks: www.ted.com</section>
+					<section>CodeSignal: codesignal.com</section>
+					<section>Tutorials Point: tutorialspoint.com</section>
+					<section>Hack a Day: hackaday.com</section>
+					<section>Scotch: scotch.io</section>
+					<section>O'Reilly: www.oreilly.com</section>
+					<section>Free Code Camp: www.freecodecamp.org</section>
+					<section>Y el pilón...</section>
+					<section>Lista de Algotimos: www.wikiwand.com/en/List_of_algorithms</section>
+				</section>
+				<section>
+					Hora de preguntas
+				</section>
+				<!--section>
+					<h1>¡Gracias!</h1>
+					<h5>Contacto:</h5>
+					<p>Facebook: fb.me/carlosmartinex</p>
+					<p>Medium: @carlosmartinex</p>
+				</section-->
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
