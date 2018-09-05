@@ -67,15 +67,35 @@ También podemos asignar nuevos valores de tipos diferentes a nuestras variables
 
 ### Operadores
 Como vimos en clase, existe varios tipos de operadores en python, los principales son los operadores aritméticos, operadores de comparación y operadores booleanos.
-
-#### Operadores aritméticos principales
 Las operaciones básicas de python son:
 
-  | operación                       | símbolo  | ejemplo   | resultado |
-  | ------------------------------- | :------: | :-------: | -: |
-  | suma                            |     +    |   2 + 2   | 4 |
-  | resta                           |     -    |   2 - 2   | 0 |
-  | multiplicación                  |     *    |   2 * 2   | 4 |
-  | división                        |     /    |   5 / 2   | 2.5 |
-  | división entera (sin decimales) |     //   |   5 // 2  | 2 |
-  | resudio de división entera      |     %    |   5 // 2  | 1 |
+#### Operadores aritméticos principales
+
+  | operación                           | símbolo  | ejemplo   | resultado |
+  | ----------------------------------- | :------: | :-------: | -: |
+  | suma                                |     +    |   2 + 2   | 4 |
+  | resta                               |     -    |   2 - 2   | 0 |
+  | multiplicación                      |     *    |   2 * 2   | 4 |
+  | división                            |     /    |   5 / 2   | 2.5 |
+  | división entera (sin decimales)     |     //   |   5 // 2  | 2 |
+  | Módulo (resudio de división entera) |     %    |   5 // 2  | 1 |
+  
+#### Operadores de comparación (relacionales)
+
+  | operación | símbolo | ejemplo | resultado |
+  | --- | :---: | :---: | ---: |
+  | igual a | == | 10 == 10 | True |
+  | diferente de | != | 10 != 0| True |
+  | mayor que | > | 10 > 4 | True |
+  | menor que | < | 10 < 20 | True |
+  | mayor o igual | >= | 20 >= 20 | True |
+  | menor o igual | <= | 25 <= 20 | False |
+  
+  
+#### Operadores lógicos (también llamados booleanos)
+ 
+  | operación | símbolo | ejemplo | resultado |
+  | --- | :---: | :---: | ---: |
+  | Y | and | 10 > 5 and 1 < 2 | True |
+  | Ó | or | 10 > 5 or 2 < 1 | True | 
+  | negación | not | not True | False |
